@@ -2,10 +2,18 @@ body{
     background-color: black;
     color: white;
 }
-#main{
+#master {
+    height: 200px;
+    display: flex;
+    flex-direction: column; 
+    justify-content: space-between;
+}
+
+#main {
     display: flex;
     justify-content: center;
 }
+
 #timer {
     border: 2px solid red;
     border-radius: 50%;
@@ -20,5 +28,16 @@ body{
     width: 100%; /* Make it take full width of the timer */
     text-align: center; /* Center-align the text */
     font-size: 20px;
-    padding-bottom: 24px;
+    padding-bottom: 48px;
+}
+
+#main1 {
+    display: flex;
+    justify-content: center;
+}
+
+#btns {
+    display: flex;
+    justify-content: space-between;
+    width: 150px;
 }
