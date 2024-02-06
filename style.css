@@ -1,0 +1,24 @@
+body{
+    background-color: black;
+    color: white;
+}
+#main{
+    display: flex;
+    justify-content: center;
+}
+#timer {
+    border: 2px solid red;
+    border-radius: 50%;
+    height: 150px; /* Increased height */
+    width: 150px; /* Increased width */
+    position: relative; /* Added positioning */
+}
+
+#timer h5 {
+    position: absolute; /* Positioning the h5 absolutely */
+    bottom: 0; /* Position it at the bottom */
+    width: 100%; /* Make it take full width of the timer */
+    text-align: center; /* Center-align the text */
+    font-size: 20px;
+    padding-bottom: 24px;
+}
