@@ -1,9 +1,9 @@
 body{
-    background-color: black;
+background: linear-gradient(135deg, #000000, #191970);
     color: white;
 }
 #master {
-    height: 230px;
+    height: 210px;
     display: flex;
     flex-direction: column; 
     justify-content: space-between;
@@ -15,7 +15,7 @@ body{
 }
 
 #timer {
-    border: 2px solid red;
+    border: 4px solid white;
     border-radius: 50%;
     height: 150px; /* Increased height */
     width: 150px; /* Increased width */
@@ -51,4 +51,32 @@ body{
 }
 .rounded-circle{
     height: 40px;
+}
+#lap-list {
+    list-style: none;
+    padding: 0;
+    text-align: center;
+}
+
+#lap-list li {
+    border: 2px solid transparent;
+    border-radius: 8px;
+    margin: 5px;
+    padding: 10px;
+}
+
+#lap-list li p {
+    margin: 0;
+}
+
+#lap-list li p span {
+    display: block;
+}
+
+#lap-list li p span:first-child {
+    font-weight: bold;
+}
+
+#lap-list li p span:last-child {
+    font-style: italic;
 }
