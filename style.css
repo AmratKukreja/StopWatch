@@ -3,7 +3,7 @@ body{
     color: white;
 }
 #master {
-    height: 200px;
+    height: 230px;
     display: flex;
     flex-direction: column; 
     justify-content: space-between;
@@ -37,7 +37,18 @@ body{
 }
 
 #btns {
-    display: flex;
+    display: none;
     justify-content: space-between;
     width: 230px;
+}
+#play-btn{
+    display: flex;
+    justify-content: center;
+    width: 230px;
+}
+.btn-sm{
+    font-size: 10px;
+}
+.rounded-circle{
+    height: 40px;
 }

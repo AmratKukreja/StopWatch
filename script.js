@@ -2,10 +2,24 @@ let minute = 0;
 let second = 0;
 let tenth = 0;
 let timeInterval;
-
+let isRun = false;
 function startTimer(){
+    document.getElementById("play-btn").style.display="none";
+    document.getElementById("btns").style.display="flex";
     timeInterval = setInterval(incrementTimer,100)
     console.log("Amrat")
+}
+function stopTimer(){
+    if(isRun){
+        isRun = false;
+        startTimer();
+        document.getElementById("pause").innerText  = "Pause"
+    }
+    else{
+    document.getElementById("pause").innerText  = "Resume"
+    isRun = true;
+    clearInterval(timeInterval)
+}
 }
 function incrementTimer(){
     tenth++;
